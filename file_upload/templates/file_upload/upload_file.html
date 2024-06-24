@@ -1,0 +1,20 @@
+{% extends 'base_file.html' %}
+{%  block content %}
+{% load static %}
+    <div class="container">
+        <form method="POST" action="{% url 'file_upload:upload_file' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" name="myFile" type="file" id="formFile">
+            </div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-success my-2" data-dismiss="modal"> <i class='uil-file-upload-alt'></i>  Upload Template </button>
+            </div>
+        </form>
+
+        <div class="col-md-12">
+            {{turtle|linebreaksbr}}
+        </div>
+    </div>
+{%  endblock %}

@@ -1,2 +1,2 @@
-# Mapping_and_Transformation
-This is to create repo for Transformation Matrix
+# Mapping and Transformation
+Mappng instance data from mapping file it into RDF triples that conform to the common data model
